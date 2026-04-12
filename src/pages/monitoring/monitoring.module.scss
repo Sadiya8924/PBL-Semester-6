@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* HEADER PANEL */
+
+.headerBox {
+  background: #020617;
+
+  border: 1px solid rgba(34, 211, 238, 0.12);
+
+  padding: 20px 24px;
+
+  margin-bottom: 20px;
+
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(34,211,238,0.05);
+}
+
+
+.title {
+  font-size: 22px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  color: #22d3ee;
+}
+
+
+.subtitle {
+  font-size: 13px;
+
+  margin-top: 4px;
+
+  color: #94a3b8;
+}
+
+
+
+/* GRID STATUS */
+
+.gridWrapper {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+
+  gap: 20px;
+}
+
+
+
+/* CARD STATUS */
+
+.card {
+  background: #020617;
+
+  border: 1px solid rgba(34, 211, 238, 0.15);
+    border-radius: 14px;
+  padding: 24px;
+
+  min-height: 120px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(34,211,238,0.05);
+}
+
+
+.card:hover {
+  transform: translateY(-4px);
+
+  border: 1px solid rgba(34, 211, 238, 0.35);
+
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.6),
+    0 0 8px rgba(34,211,238,0.25);
+}
+
+
+.cardTitle {
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  color: #94a3b8;
+}
+
+
+.cardValue {
+  font-size: 24px;
+
+  font-weight: bold;
+
+  margin-top: 6px;
+
+  color: #22d3ee;
+}

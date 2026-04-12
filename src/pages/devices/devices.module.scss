@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #22d3ee;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid rgba(34, 211, 238, 0.15);
+  border-radius: 14px;
+  padding: 24px;
+
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  border-color: #22d3ee;
+  transform: translateY(-3px);
+}
+
+.cardTitle {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.status {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.description {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+
+/* STATUS COLORS */
+
+.active {
+  color: #22c55e;
+}
+
+.warning {
+  color: #eab308;
+}
+
+.moving {
+  color: #22d3ee;
+}
+.headerBox {
+  background: #020617;
+
+  border: 1px solid rgba(34, 211, 238, 0.12);
+
+  padding: 20px 24px;
+
+  /* efek shadow 3D statis */
+
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(34,211,238,0.05);
+
+  margin-bottom: 18px;
+}
+
+.statsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+
+.statCard {
+  background: #020617;
+
+  border: 1px solid rgba(34, 211, 238, 0.15);
+    border-radius: 14px;
+  padding: 18px;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(34,211,238,0.05);
+}
+
+
+/* efek hover sama seperti device card */
+
+.statCard:hover {
+  transform: translateY(-4px);
+
+  border: 1px solid rgba(34, 211, 238, 0.35);
+
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.6),
+    0 0 8px rgba(34,211,238,0.25);
+}
+
+
+.statTitle {
+  font-size: 12px;
+
+  color: #94a3b8;
+
+  letter-spacing: 1px;
+}
+
+
+.statValue {
+  font-size: 28px;
+
+  font-weight: bold;
+
+  color: #22d3ee;
+
+  margin-top: 6px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .gridWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gridWrapper {
+    grid-template-columns: 1fr;
+  }
+}
