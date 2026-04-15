@@ -74,7 +74,7 @@ export default function Devices() {
       {/* SUMMARY STATS GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
-          { label: "Active Nodes", count: "5", icon: <Wifi className="text-emerald-400" /> },
+          //   
           { label: "Total Hardware", count: "3 Units", icon: <Cpu className="text-cyan-400" /> },
           { label: "Avg Latency", count: "12ms", icon: <Activity className="text-amber-400" /> }
         ].map((stat, i) => (

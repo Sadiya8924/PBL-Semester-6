@@ -74,13 +74,13 @@ export default function Home() {
             icon={<Activity className="w-4 h-4" />}
             status="warning"
           />
-          <StatusCard 
+          {/* <StatusCard 
             variant="compact"
             title="CPU Temp" 
             value="42°C" 
             icon={<Cpu className="w-4 h-4" />}
             status="active"
-          />
+          /> */}
         </div>
       </section>
 
