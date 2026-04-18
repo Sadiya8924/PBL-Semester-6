@@ -31,7 +31,7 @@ export default function Sidebar() {
           </div>
           <div>
             <h1 className="text-white text-lg font-bold tracking-tight leading-none">
-              SMART<span className="text-cyan-400">RAIL</span>
+              Train<span className="text-cyan-400">lytic</span>
             </h1>
             <p className="text-slate-500 text-[10px] uppercase tracking-[0.2em] mt-1">
               Control Center
